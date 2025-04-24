@@ -1,0 +1,294 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdsnhxge4l20f"]
+
+[ext_resource type="Script" uid="uid://0d5l11h5y8dm" path="res://control.gd" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://d0y15rme5t7sv" path="res://player.gd" id="2_62e2m"]
+[ext_resource type="Script" uid="uid://0eq081c4f4l5" path="res://addons/graph_2d/graph_2d.gd" id="3_qtu10"]
+[ext_resource type="Script" uid="uid://cakbpxxfxnlmb" path="res://panel.gd" id="4_ee4bf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 1264.0
+offset_top = 38.0
+offset_right = 1783.0
+offset_bottom = 90.0
+placeholder_text = "Anzahl Spritzen"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1317.0
+offset_top = 147.0
+offset_right = 1712.0
+offset_bottom = 273.0
+text = "Normal"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1317.0
+offset_top = 304.0
+offset_right = 1505.0
+offset_bottom = 430.0
+text = "Farb Solo"
+
+[node name="Button2_2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1528.0
+offset_top = 304.0
+offset_right = 1716.0
+offset_bottom = 430.0
+text = "Farb Solo
+verloren"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1317.0
+offset_top = 464.0
+offset_right = 1505.0
+offset_bottom = 590.0
+text = "Trumpf Solo"
+
+[node name="Button3_2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1528.0
+offset_top = 464.0
+offset_right = 1716.0
+offset_bottom = 590.0
+text = "Trumpf Solo
+verloren"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1436.0
+offset_top = 647.0
+offset_right = 1612.0
+offset_bottom = 823.0
+text = "Letzten Eintrag
+ löschen"
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 206.0
+offset_bottom = 472.0
+script = ExtResource("2_62e2m")
+
+[node name="CheckButton" type="CheckButton" parent="Control"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -45.0
+offset_right = 168.0
+offset_bottom = 11.0
+text = "Tomas"
+
+[node name="ItemList" type="ItemList" parent="Control"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 16.0
+offset_right = 167.0
+offset_bottom = 611.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 9.0
+offset_right = 167.0
+offset_bottom = 15.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 610.0
+offset_right = 153.0
+offset_bottom = 642.0
+text = "-"
+horizontal_alignment = 1
+
+[node name="Control2" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 300.0
+offset_top = 100.0
+offset_right = 406.0
+offset_bottom = 472.0
+script = ExtResource("2_62e2m")
+
+[node name="CheckButton" type="CheckButton" parent="Control2"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -45.0
+offset_right = 168.0
+offset_bottom = 11.0
+text = "Inna"
+
+[node name="ItemList" type="ItemList" parent="Control2"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 16.0
+offset_right = 167.0
+offset_bottom = 611.0
+
+[node name="ColorRect" type="ColorRect" parent="Control2"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 9.0
+offset_right = 167.0
+offset_bottom = 15.0
+
+[node name="Label" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 610.0
+offset_right = 153.0
+offset_bottom = 642.0
+text = "-"
+horizontal_alignment = 1
+
+[node name="Control3" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 500.0
+offset_top = 100.0
+offset_right = 606.0
+offset_bottom = 472.0
+script = ExtResource("2_62e2m")
+
+[node name="CheckButton" type="CheckButton" parent="Control3"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -45.0
+offset_right = 168.0
+offset_bottom = 11.0
+text = "Holger"
+
+[node name="ItemList" type="ItemList" parent="Control3"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 16.0
+offset_right = 167.0
+offset_bottom = 611.0
+
+[node name="ColorRect" type="ColorRect" parent="Control3"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 9.0
+offset_right = 167.0
+offset_bottom = 15.0
+
+[node name="Label" type="Label" parent="Control3"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 610.0
+offset_right = 153.0
+offset_bottom = 642.0
+text = "-"
+horizontal_alignment = 1
+
+[node name="Control4" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 700.0
+offset_top = 100.0
+offset_right = 806.0
+offset_bottom = 472.0
+script = ExtResource("2_62e2m")
+
+[node name="CheckButton" type="CheckButton" parent="Control4"]
+layout_mode = 0
+offset_left = -23.0
+offset_top = -45.0
+offset_right = 168.0
+offset_bottom = 11.0
+text = "Dana"
+
+[node name="ItemList" type="ItemList" parent="Control4"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 16.0
+offset_right = 167.0
+offset_bottom = 611.0
+
+[node name="ColorRect" type="ColorRect" parent="Control4"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 9.0
+offset_right = 167.0
+offset_bottom = 15.0
+
+[node name="Label" type="Label" parent="Control4"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = 610.0
+offset_right = 153.0
+offset_bottom = 642.0
+text = "-"
+horizontal_alignment = 1
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 902.0
+offset_top = 117.0
+offset_right = 1202.0
+offset_bottom = 712.0
+
+[node name="Graph2D" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 17.0
+offset_top = 737.0
+offset_right = 1272.0
+offset_bottom = 1015.0
+script = ExtResource("3_qtu10")
+show_x_ticks = false
+show_x_numbers = false
+y_label = "Punkte"
+show_y_ticks = false
+show_y_numbers = false
+background_color = Color(0, 0, 0, 0)
+metadata/_custom_type_script = "uid://0eq081c4f4l5"
+
+[node name="Panel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1238.0
+offset_top = 815.0
+offset_right = 1849.0
+offset_bottom = 1105.0
+script = ExtResource("4_ee4bf")
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 19.0
+offset_right = 60.0
+offset_bottom = 81.0
+text = "<
+"
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 29.0
+offset_right = 455.0
+offset_bottom = 78.0
+placeholder_text = "Wert der hinzugefügt werden soll"
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 95.0
+offset_right = 487.0
+offset_bottom = 223.0
+text = "Wert hinzufügen"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button2_2" to="." method="_on_button_2_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button3_2" to="." method="_on_button_3_2_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Panel/Button2" to="Panel" method="_on_button__pressed"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_5_pressed"]
